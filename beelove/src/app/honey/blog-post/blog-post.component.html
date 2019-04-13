@@ -1,0 +1,28 @@
+<div class="blog-header">
+  <div class="container">
+    <div class="row">
+      <div class="page-title">
+        <h1>News</h1>
+      </div>
+      <div class="breadcrumbs">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Home</a>
+        <span class="breadcrumbs-delimiter"></span>
+        <a routerLink="/honey" routerLinkActive="active">Honey</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="blog-content">
+  <div class=container>
+    <div class="row blog-post" *ngFor="let post of posts">
+      <div class="col-md-12">
+        <div class="post-title">
+          <h3 [innerHtml]="post.title | HTML"></h3>
+        </div>
+      </div>
+      <div class="col-md-12" class="post-content" [innerHtml]="post.content | HTML">
+      </div>
+    </div>
+  </div>
+</div>

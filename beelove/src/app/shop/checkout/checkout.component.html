@@ -1,0 +1,84 @@
+<div clas="checkout-modal"></div>
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title" class="checkout-title">Checkout</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+      <div formGroupName="userData">
+
+        <div class="form-group">
+          <label for="firstName" class="bee-label">Prenume: <abbr class="required" title="required">*</abbr></label>
+          <input autocomplete='tel-national' type="text" id="firstName" formControlName="firstName" class="form-control bee-form-control">
+          <span *ngIf="!checkoutForm.get('userData.firstName').valid && checkoutForm.get('userData.firstName').touched"
+            class="help-block">
+            <span *ngIf="checkoutForm.get('userData.firstName').errors['required']">Completati prenumele!</span>
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName" class="bee-label">Nume: <abbr class="required" title="required">*</abbr></label>
+          <input autocomplete='tel-national' type="text" id="lastName" formControlName="lastName" class="form-control bee-form-control">
+          <span *ngIf="!checkoutForm.get('userData.lastName').valid && checkoutForm.get('userData.lastName').touched"
+            class="help-block">
+            <span *ngIf="checkoutForm.get('userData.lastName').errors['required']">Completati numele!</span>
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="emailAddress" class="bee-label">Adresa de email: <abbr class="required" title="required">*</abbr></label>
+          <input autocomplete='tel-national' type="text" id="emailAddress" formControlName="emailAddress" class="form-control bee-form-control">
+          <span *ngIf="!checkoutForm.get('userData.emailAddress').valid && checkoutForm.get('userData.emailAddress').touched" class="help-block">
+            Va rugam introduceti o adresa de email valida!
+          </span>
+        </div>
+      </div>
+
+      <div formGroupName="address">
+        <div class="form-group">
+          <label for="city" class="bee-label">Localitatea: <abbr class="required" title="required">*</abbr></label>
+          <input autocomplete='tel-national' type="text" id="city" formControlName="city" class="form-control bee-form-control">
+          <span *ngIf="!checkoutForm.get('address.city').valid && checkoutForm.get('address.city').touched" class="help-block">
+            <span *ngIf="checkoutForm.get('address.city').errors['required']">Completati numele localitatii!</span>
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="city" class="bee-label">Cod postal: <abbr class="required" title="required">*</abbr></label>
+          <input autocomplete='tel-national' type="number" id="postalCode" formControlName="postalCode" class="form-control bee-form-control">
+          <span *ngIf="!checkoutForm.get('address.postalCode').valid && checkoutForm.get('address.postalCode').touched"
+            class="help-block">
+            <span *ngIf="checkoutForm.get('address.postalCode').errors['required']">Completati codul postal!</span>
+          </span>
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber" class="bee-label">Numar telefon: <abbr class="required" title="required">*</abbr></label>
+          <input autocomplete='tel-national' type="text" id="phoneNumber" formControlName="phoneNumber" class="form-control bee-form-control">
+          <span *ngIf="!checkoutForm.get('address.phoneNumber').valid && checkoutForm.get('address.phoneNumber').touched" class="help-block">
+            <span *ngIf="checkoutForm.get('address.phoneNumber').errors['required']">Completati numarul de telefon!</span>
+          </span>
+        </div>
+        <div class="form-group">
+          <label for="fullAddress" class="bee-label">Strada, numar, reper: <abbr class="required" title="required">*</abbr></label>
+          <input autocomplete='tel-national' type="text" id="fullAddress" formControlName="fullAddress" class="form-control bee-form-control">
+          <span *ngIf="!checkoutForm.get('address.fullAddress').valid && checkoutForm.get('address.fullAddress').touched" class="help-block">
+            <span *ngIf="checkoutForm.get('address.fullAddress').errors['required']">Completati cu un reper!</span>
+          </span>
+        </div>
+
+      </div>
+      <button class="place-order" type="submit">Plaseaza comanda</button>
+
+    </form>
+  </div>
+  <!-- <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="('Save click')">Save</button>
+  </div> -->
+</ng-template>
+
+<div class="checkout">
+  <a (click)="open(content)">Checkout</a>
+</div>

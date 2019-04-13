@@ -1,0 +1,16 @@
+.bee-form-control {
+  line-height: 1.85em;
+  padding: 0.764em 1em;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  border-color: #f9f8f4;
+  color: #8c7363;
+  transition: all ease .3s;
+  border-radius: 2em;
+  font-size: 1em;
+  vertical-align: baseline;
+  text-align: start;
+  font-family: Arimo, sans-serif;
+}

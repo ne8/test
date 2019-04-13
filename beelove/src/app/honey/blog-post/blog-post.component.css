@@ -1,0 +1,87 @@
+.blog-header {
+    background-image: url('/assets/images/shop/honey-jar.jpg');
+    background-size: cover;
+
+}
+.page-title {
+    width: 100%;
+}
+
+.page-title h1{
+    color: #fff;
+    margin: 0;
+    font-weight: 300;
+    font-size: 5.403em;
+    padding: 1.23em 0 0em;
+    line-height: 1.2em;
+    display: block;
+    font-family: "Sansita One", cursive;
+    text-align: center;
+}
+
+.breadcrumbs {
+    padding: 0.7em 0 4.4em;
+    text-align: center;
+    width:100%;
+    letter-spacing: 1px;
+}
+.breadcrumbs a,span{
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+    font-size: 17.5px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+.breadcrumbs-delimiter {
+    display: inline-block;
+    position: relative;
+    margin: 0 1.15em;
+    margin-top: 0px;
+    margin-right: 1.15em;
+    margin-bottom: 0px;
+    margin-left: 1.15em;
+    vertical-align: top;
+    text-align: center;
+}
+.breadcrumbs-delimiter:before {
+    content: '|';
+}
+
+.active{
+    color: rgba(255,255,255,0.6)!important;
+}
+
+.blog-content{
+    padding: 7.15em 0;
+}
+.post-title{
+    color: #f8b742;
+    margin-top: 0;
+    margin-bottom: 1.63em;
+    font-family: "Sansita One", cursive;
+    line-height: 1.01em;
+}
+.post-title h3{
+    font-family: "Sansita One", cursive;
+    font-size: 2.857em;
+
+}
+.post-content{
+    margin-bottom: 3em;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 3em;
+    width:100%;
+    color: #8c7363;
+    font-family: "Arimo", sans-serif;
+    font-size: 14px;
+    line-height: 1.8em;
+    font-weight: 400;
+}
+.post-content p{
+    margin-bottom: 1.75em;
+}

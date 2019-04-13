@@ -1,0 +1,28 @@
+<div class="shop-list">
+  <div class="shop-list-header">
+    <div class="container">
+      <div class="row">
+        <div class="page-title">
+          <h1>Shop</h1>
+        </div>
+        <div class="breadcrumbs">
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]= "{exact : true}">Home</a>
+          <span class="breadcrumbs-delimiter"></span>
+          <a routerLink="/shop" routerLinkActive="active">Shop</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shop-list-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <app-cart [products]="addedProductsToCart" (resolvedCheckout)="handleCheckout($event)" ></app-cart>
+        </div>
+        <div class="col-md-8">
+          <app-product [products]="availableProducts" (product)="handleProduct($event)"></app-product>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+routerLinkActive
+routerLintActiveOptions = {exact:true}
+inject Router
+import RouterModeule
+routers:Routesp[ ]
+
+inject router
+use this.router.navigate([''])
+use this.router.navigate(['server'],{relativeTo: })
+
+use route: ActivatedRoute object about current route

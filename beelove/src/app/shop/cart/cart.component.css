@@ -1,0 +1,77 @@
+.bee-cart {
+    color: #8c7363;
+    background-color: #f9f8f4;
+    padding: 5.1em 4em;
+    word-wrap: break-word;
+}
+.title {
+    color: #f8b742;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 2em;
+    text-transform: none;
+    font-weight: 600;
+}
+
+.product-list {
+    list-style-type: none;
+    overflow: auto;
+}
+
+.product-list li{
+    overflow: hidden;
+}
+.product-image {
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin: 0 0.75em 1em 0;
+}
+.bee-products{
+    display: block;
+}
+.product-name {
+    font-weight: 700;
+    line-height: 1em;
+    font-size: 1.286em;
+    color: #6f503c;
+    position: relative;
+    padding-right: 10px;
+}
+.remove-button {
+    height: 20px;
+    width: 20px;
+    line-height: 21px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    right: 0;
+    margin-top: 0;
+    left: auto;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.subtotal{
+    display:block;
+}
+.subtotal p{
+    font-size: 1em;
+    padding: 0.85em 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-top: 1em;
+    text-align: right;
+    margin-bottom: 2.15em;
+    border-color: #ececec;
+}
+.amount {
+    margin-left:4px;
+    color: #f8b742;
+    font-size: 1.2857em;
+    font-weight: 400;
+    text-align: right;
+}

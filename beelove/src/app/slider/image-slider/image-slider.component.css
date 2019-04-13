@@ -1,0 +1,314 @@
+
+img {
+  max-width: 100%;
+}
+
+.slider-container {
+  height: 100%;
+  position: relative;
+}
+
+.img-container {
+  position: relative;
+  left: 0;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+  will-change: opacity;
+  transition: opacity .3s;
+  cursor: pointer;
+  display: none;
+  height: 0;
+  overflow: hidden;
+
+}
+
+.slide-button:hover, .slide-button-select {
+  width: 70px !important;
+  background-color: #f8b742;
+  pointer-events: none;
+  transition: background-color .4s, width 4s cubic-bezier(0.190, 1.000, 0.220, 1.000) !important;
+}
+
+.slide-button {
+  width: 35px;
+  height: 7px;
+  background-color: #f8b742;
+  cursor: pointer;
+  position: absolute;
+
+}
+
+.slider {
+  position: absolute;
+  top: calc(10vh + 13vw);;
+  right: 80px;
+  opacity: 1;
+  min-width: 30px;
+
+}
+
+.slide-button-parent-container {
+  position: relative;
+  margin: calc(1vw + 1vh) 0;
+  min-height: 4px;
+}
+
+.select-box {
+  min-height: 10px;
+}
+
+.slider-container .text-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: calc(12vh + 7vw);
+}
+
+.page-text {
+  width: 50%;
+  height: 100%;
+  opacity: 1;
+  font-weight: 300;
+  font-size: 90px;
+  color: white;
+  display: none;
+}
+
+.page-text h2 {
+  font-family: "Sansita One";
+  z-index: 6;
+  white-space: nowrap;
+  font-size: calc(3vh + 2vw);
+  line-height: calc(2vh + 2vw);
+  letter-spacing: 0px;
+  font-weight: 400;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-origin: 50% 50% 0px;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.page-text h3 {
+  z-index: 5;
+  white-space: nowrap;
+  font-size: calc(1vh + 0.5vw);
+  line-height: 30px;
+  font-family: Arimo, serif;
+  text-transform: uppercase;
+  border-width: 0px;
+  padding: 0px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-origin: 50% 50% 0px;
+  margin-top: 1.5vw;
+}
+
+.selected {
+  opacity: 1;
+  display: block;
+  transition: opacity 2s ease-out;
+  height: auto !important;
+
+}
+
+.yellow-bee {
+  color: #f8b742;
+}
+
+.shop-button {
+  margin-top: calc(1vh + 1vw);
+}
+
+.bee-shop-button {
+  z-index: 7;
+  white-space: nowrap;
+  font-size: calc( 1vh + 0.5vw);
+  line-height: 15px;
+  font-weight: 700;
+  font-family: Arimo, serif;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  outline: none;
+  box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  visibility: inherit;
+  transition: none;
+  text-align: left;
+  margin: 0px;
+  padding:  calc(0.5vh + 0.5vw)  calc(1vh + 1vw);
+  letter-spacing: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-origin: 50% 50% 0px;
+  color: rgb(255, 255, 255);
+}
+.bee-shop-button a{
+  color: #ffffff;
+}
+.bee-shop-button a{
+  text-decoration:none;
+}
+.bee-shop-button:hover {
+  background-color: #f8b742;
+  border-color: #f8b742;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-container {
+    top: calc(4vh + 4vw);
+  }
+
+  .page-text h2 {
+    font-size: calc(2vh + 2vw);
+
+  }
+
+  .slider {
+    top: calc(8vh + 9vw);;
+  }
+}
+
+
+.about-us-section .title {
+  color: #f8b742;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.25em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  font-family: "Sansita One", cursive;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.about-us-section .image-container {
+  margin-top: 4em;
+  overflow: hidden;
+  margin-bottom: 2.4em;
+  position: relative;
+}
+
+.about-us-section .subtitle {
+  color: #6f503c;
+}
+
+.about-us-section .subtitle h4 {
+  margin: 1em 0 0.8em;
+  font-size: 1.286em;
+  height: 1.35em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.about-us-section .text-container {
+  padding: 12px 25px;
+  margin-top: 0;
+  line-height: 1.75em;
+  overflow: hidden;
+  margin-bottom: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: inherit;
+  color: #8c7363;
+  text-align: center;
+}
+.banner{
+  margin-top: 6em;
+}
+.about-us-section .banner{
+  background:  url("/assets/images/banner/banner-1.jpg") ;
+  padding-bottom: 6em;
+}
+.about-us-section .banner .title h3 {
+  margin-top: 2.35em;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 2px;
+  font-family: "Sansita One", cursive;
+  font-size: 1em;
+  line-height: 1.01em;
+}
+.about-us-section .banner .subtitle h5 {
+  position: relative;
+  padding-bottom: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Arimo", sans-serif;
+  font-size: 1.143em;
+  line-height: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+
+}
+.shop-button {
+  text-align: center;
+  max-width: 170px;
+  margin: 0 auto;
+}
+
+.bee-shop-button {
+  z-index: 7;
+  white-space: nowrap;
+  font-size: calc( 1vh + 0.5vw);
+  line-height: 15px;
+  font-weight: 700;
+  font-family: Arimo, serif;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  outline: none;
+  box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  visibility: inherit;
+  transition: none;
+  margin: 0;
+  padding:  calc(0.7vh + 0.5vw)  calc(1vh + 1.2vw);
+  letter-spacing: 0;
+  min-height: 0;
+  min-width: 0;
+  max-height: none;
+  max-width: none;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-origin: 50% 50% 0px;
+  color: rgb(255, 255, 255);
+}
+.bee-shop-button a{
+  color : #ffffff;
+}
+.bee-shop-button a:hover{
+  text-decoration: none;
+}
+.bee-shop-button:hover {
+  background-color: #f8b742;
+  border-color: #f8b742;
+}

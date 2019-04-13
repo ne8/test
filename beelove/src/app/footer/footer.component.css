@@ -1,0 +1,102 @@
+.footer {
+  background-color: #372b2b;
+}
+
+.footer .wrapper {
+  padding: 3.9em 0 0;
+  text-align: center;
+}
+
+.footer .wrapper .column {
+  border-color: rgba(114, 105, 105, 0.8);
+  border-bottom: 1px solid;
+  margin-bottom: 3.4em;
+  margin-top: 2.65em;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.footer .wrapper .column .logo {
+  text-align: center;
+  margin-bottom: 2.3em;
+}
+
+.footer .wrapper .column .logo img {
+  width: 109px;
+  height: 75px;
+}
+
+.footer .subtitle {
+  color: #ffffff;
+}
+
+.footer .subtitle h4 {
+  font-family: "Arimo", sans-serif;
+  font-size: 1.286em;
+  line-height: 1.4em;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+
+.footer .info {
+  color: rgba(251, 250, 247, 0.6);
+}
+.footer .info:hover{
+  color: #b8821d;
+  cursor: pointer;
+}
+.footer .mail-contact {
+  color: rgba(251, 250, 247, 0.6);
+  text-decoration: none;
+}
+
+.footer .mail-contact:hover {
+  color: #b8821d;
+}
+
+.text-content {
+  color: rgba(251, 250, 247, 0.6);
+  text-align: center;
+}
+.text-content a {
+  color: rgba(251, 250, 247, 0.6);
+}
+
+.text-content {
+  padding: 2.7em 0 1.9em;
+  overflow: hidden;
+}
+.social-wrapper{
+  display: inline-block;
+}
+.social-wrapper a {
+  font-size: 2.25em;
+  line-height: inherit;
+}
+.social-wrapper a:hover {
+  color: #f8b742;
+}
+
+
+.social-icon {
+  color: rgba(251,250,247,0.6);
+  border-color: #726969;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  background-position: 0 -2.5em;
+  background-size: 2.5em 5em;
+}
+.info .phone-number{
+  color:rgba(251, 250, 247, 0.6);
+}
+.info .phone-number:hover {
+  color: #b8821d;
+  text-decoration: none;
+}

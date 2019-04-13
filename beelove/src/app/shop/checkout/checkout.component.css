@@ -1,0 +1,124 @@
+
+.checkout{
+    display:block;
+    width:100%;
+    height: 100%;
+    text-align: right;
+}
+.checkout a{
+    border-color: #f8b742;
+    color: #f8b742;
+    background-color: rgba(248,183,66,0);
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.05em 1.74em;
+    font-size: 1em;
+    line-height: 1.2857em;
+    font-weight: 700;
+    margin: 0;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2em;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+.checkout a:hover {
+    color: #fff;
+    background-color: #f8b742;
+}
+.checkout-title {
+    color: #f8b742;
+    margin-top: 0;
+    font-size: 2em;
+    text-transform: none;
+    font-weight: 600;
+}
+
+.bee-form-control {
+    line-height: 1.85em;
+    padding: 0.764em 1em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    outline: 0;
+    border-color: #f9f8f4;
+    color: #8c7363;
+    transition: all ease .3s;
+    border-radius: 2em;
+    font-size: 1em;
+    vertical-align: baseline;
+    text-align: start;
+    font-family: Arimo, sans-serif;
+}
+.bee-form-control:focus{
+    border-color: #f8b742;
+    outline: 0;
+    box-shadow: none;
+
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bee-label{
+    line-height: 1.5em;
+    display: block;
+    font-family: Arimo, sans-serif;
+    font-size:14px;
+    color: rgb(140, 115, 99);
+}
+.required{
+    color: red;
+    font-weight: 700;
+    border: 0!important;
+    text-decoration: none;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+.help-block{
+    color: rgb(140, 115, 99);
+}
+
+.place-order{
+    border-color: #f8b742;
+    float: right;
+    color: #f8b742;
+    background-color: rgba(248,183,66,0);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.05em 1.74em;
+    font-size: 1em;
+    line-height: 1.2857em;
+    font-weight: 700;
+    margin: 0;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2em;
+    margin-bottom: 1px;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    left: auto;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.place-order:hover{
+    color: #fff;
+    background-color: #f8b742;
+}

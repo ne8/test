@@ -1,0 +1,24 @@
+<div class="bee-cart">
+    <h5 class="title">Shopping cart</h5>
+    <div class="bee-products">
+        <ul class="product-list">
+            <li *ngFor="let product of products">
+                <img class="product-image" [src]="product.pathToImage" [alt]="product.name" />
+                <div class= "product-name">
+                    {{product.name}}
+                    <a class="remove-button" (click) = "removeItem(product)" >×</a>
+                </div>
+                <div class="total">{{product.unit}} × {{product.price}} RON</div>
+            </li>
+        </ul>
+    </div>
+    <div class="subtotal">
+        <p class="mini-cart-total">
+            <strong>Subtotal:</strong>
+            <span class="amount">{{totalPrice}} RON</span>
+        </p>
+    </div>
+    
+
+    <app-checkout [products]="products" (outProducts)="handleResult($event)"></app-checkout>
+</div>

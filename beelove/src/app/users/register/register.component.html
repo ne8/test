@@ -1,0 +1,118 @@
+<div class="register-page">
+  <h2 class="title">Inregistrare:</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+          <label for="firstName" class="bee-label">
+            Prenume <abbr class="required" title="required">*</abbr></label
+          >
+          <input
+            autocomplete="tel-national"
+            type="text"
+            formControlName="firstName"
+            class="form-control bee-form-control"
+          />
+          <span
+            *ngIf="
+              !registerForm.get('firstName').valid &&
+              registerForm.get('firstName').touched
+            "
+            class="help-block"
+          >
+            <span *ngIf="registerForm.get('firstName').errors['required']"
+              >Completati Prenumele!</span
+            >
+          </span>
+        </div>
+        <div class="form-group">
+          <label for="lastName" class="bee-label">
+            Nume <abbr class="required" title="required">*</abbr></label
+          >
+          <input
+            autocomplete="tel-national"
+            type="text"
+            formControlName="lastName"
+            class="form-control bee-form-control"
+          />
+          <span
+            *ngIf="
+              !registerForm.get('lastName').valid &&
+              registerForm.get('lastName').touched
+            "
+            class="help-block"
+          >
+            <span *ngIf="registerForm.get('lastName').errors['required']"
+              >Completati numele!</span
+            >
+          </span>
+        </div>
+    <div class="form-group">
+      <label for="username" class="bee-label">
+        Username <abbr class="required" title="required">*</abbr></label
+      >
+      <input
+        autocomplete="tel-national"
+        type="text"
+        formControlName="username"
+        class="form-control bee-form-control"
+      />
+      <span
+        *ngIf="
+          !registerForm.get('username').valid &&
+          registerForm.get('username').touched
+        "
+        class="help-block"
+      >
+        <span *ngIf="registerForm.get('username').errors['required']"
+          >Completati username!</span
+        >
+        <span *ngIf="registerForm.get('username').errors['minlength']"
+          >Completati un username de minim 6 caractere</span
+        >
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label for="email" class="bee-label">
+        Adresa de email: <abbr class="required" title="required">*</abbr></label
+      >
+      <input
+        autocomplete="tel-national"
+        type="text"
+        formControlName="email"
+        class="form-control bee-form-control"
+      />
+      <span
+        *ngIf="
+          !registerForm.get('email').valid && registerForm.get('email').touched
+        "
+        class="help-block"
+      >
+        Va rugam introduceti o adresa de email valida!
+      </span>
+    </div>
+    <div class="form-group">
+      <label for="password" class="bee-label">
+        Parola: <abbr class="required" title="required">*</abbr></label
+      >
+      <input
+        autocomplete="tel-national"
+        type="password"
+        formControlName="password"
+        class="form-control bee-form-control"
+      />
+      <span
+        *ngIf="
+          !registerForm.get('password').valid &&
+          registerForm.get('password').touched
+        "
+        class="help-block"
+      >
+        Parola trebuie sa contina minim 6 caractere
+      </span>
+    </div>
+
+    <span class="login-label">Ai deja cont?</span>
+    <a class="bee-login" routerLink="/login" tabindex="1">Login</a>
+    <button class="bee-register" type="submit" tabindex="0">Register</button>
+  </form>
+</div>

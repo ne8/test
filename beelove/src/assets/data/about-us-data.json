@@ -1,0 +1,23 @@
+{
+  "title": "Ce facem",
+  "aboutUsArray": [
+    {
+      "imgLocation": "assets/images/about-us/bee-keeper.png",
+      "alt": "Bee Keeper",
+      "subtitle": "Beekeeper Honey",
+      "text": "Professional beekeepers take agreat care of the farm and monitor all processes to gather honey in time."
+    },
+    {
+      "imgLocation": "assets/images/about-us/bee-garden.png",
+      "alt": "Bee Garden",
+      "subtitle": "Bee Garden",
+      "text": "We have built a tru cosy garden where our hard working bees produce all sorts of local honey and nectars."
+    },
+    {
+      "imgLocation": "assets/images/about-us/bee-products.png",
+      "alt": "Bee Products",
+      "subtitle": "Bee Products",
+      "text": "Our products are 100% organic, produced on a farm with natural ingredients addition only. Sweet & delicious."
+    }
+  ]
+}

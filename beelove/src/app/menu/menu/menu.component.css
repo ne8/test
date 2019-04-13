@@ -1,0 +1,126 @@
+.bee-menu  {
+  background-color: #372b2b;
+  padding-bottom: 6px;
+  font-family: "Arimo", sans-serif;
+
+}
+
+.bee-menu ul li a {
+  color: #ffffff;
+}
+.logo {
+  margin-top: 23px;
+  margin-bottom: 6px;
+}
+
+.logo a {
+  display: inline-block;
+}
+.logo img {
+  margin-bottom: 11px;
+  margin-right: 11px;
+}
+.bee-nav {
+  list-style-type: none;
+  position:relative;
+}
+.bee-nav li {
+  position: relative;
+  padding: 20px 12px 20px 19px;
+}
+.bee-nav li a {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  color: #ffffff;
+  text-indent:10px;
+}
+
+.bee-nav li::before {
+  color: #f8b742;
+  content: '• ' ;
+  position: absolute;
+  top : 31%;
+  font-size: 22px;
+  text-align: right;
+  right: 0px;
+}
+
+/*.bee-nav li:first-child::before {*/
+  /*content: '' ;*/
+/*}*/
+
+.bee-nav li:last-child::before {
+  content: '' ;
+}
+.bee-menu .bee-nav li:hover {
+  color: #f8b742;
+}
+.bee-menu .bee-nav li:hover a {
+  color: #f8b742;
+}
+
+.bee-menu .bee-nav li:last-child a{
+  color: rgba(255, 255, 255, 0.7);
+}
+.top_panel_cart_button:hover{
+  color: rgba(255, 255, 255, 0.7);
+  border-color: #f8b742;
+
+}
+.top_panel_cart_button {
+  display: inline-block;
+  border: 2px solid;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  padding: 0 23px 0 8px;
+  text-transform: uppercase;
+  font-size: 0.857em;
+  line-height: 2.3em;
+  font-weight: 700;
+
+}
+.top_panel_cart_button:hover {
+  text-decoration: none;
+  -webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
+  transition: color 0.5s, background-color 0.5s;
+  background-color:  #f8b742;
+  color: #ffffff;
+}
+
+.mini-cart span{
+  color: rgba(255, 255, 255, 0.7);
+
+}
+
+.oi-cart {
+  margin-right: 12px;
+}
+
+
+/*.scheme_original a*/
+.active {
+  color: #f8b742!important;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color:#f8b742;
+}
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#f8b742' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.mini-cart {
+  display:none;
+}
+.bee-navbar{
+  padding-bottom:0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .bee-nav li{
+    padding: 0;
+  }
+
+}

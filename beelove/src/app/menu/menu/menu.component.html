@@ -1,0 +1,52 @@
+<div class="bee-menu">
+  <div class="container">
+
+    <nav class="navbar navbar-expand-lg navbar-light bee-navbar">
+      <div class="navbar-header">
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" witdth="168" height="42"/>
+          </a>
+        </div>
+      </div>
+      <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav  nav navbar-nav ml-auto bee-nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" routerLinkActive="active"
+                [routerLinkActiveOptions]= "{exact : true}">Acasa <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/shop"  routerLinkActive="active">Magazin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/despre-miere"  routerLinkActive="active">Despre miere</a>
+          </li>
+          <!-- <li class="nav-item" *ngIf="!currentUser">
+            <a class="nav-link" routerLink="/login"  routerLinkActive="active">Contul Meu</a>
+          </li>
+          <li class="nav-item" *ngIf="currentUser">
+              <a class="nav-link" (click)='logout()' routerLinkActive="active">Logout</a>
+            </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li> -->
+          <li class="mini-cart">
+            <a href="#" class="top_panel_cart_button" data-items="0" data-summa="$0.00">
+              <span class="oi oi-cart"> </span>
+              <span class="contact_label contact_cart_label">Your cart: </span>
+              <span class="contact_cart_totals">(<span class="cart_items">0</span>) </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cart">
+
+      </div>
+    </nav>
+  </div>
+
+</div>

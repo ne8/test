@@ -1,0 +1,8 @@
+html body {
+  font-family: "Arimo", sans-serif;
+  font-size: 14px;
+  line-height: 1.8em;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,23 @@
+version: '3'
+services:
+  stuco-front:
+    build: .
+    container_name: stuco-front
+    ports:
+      - "80:80"
+    depends_on:
+      - beelove-api
+  beelove-api:
+    image: beelove_beelove
+    container_name: beelove-api
+    hostname: beelove-api
+    depends_on:
+    - bee-love-database
+    ports:
+    - "8080:8080"
+
+  bee-love-database:
+    image: postgres:11.1
+    container_name: bee-love-database
+    ports:
+    - "5432:5432"

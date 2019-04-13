@@ -1,0 +1,129 @@
+.bee-form-control {
+  line-height: 1.85em;
+  padding: 0.764em 1em;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  border-color: #f9f8f4;
+  color: #8c7363;
+  transition: all ease 0.3s;
+  border-radius: 2em;
+  font-size: 1em;
+  vertical-align: baseline;
+  text-align: start;
+  font-family: Arimo, sans-serif;
+}
+.bee-form-control:focus {
+  border-color: #f8b742;
+  outline: 0;
+  box-shadow: none;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bee-label {
+  line-height: 1.5em;
+  display: block;
+  font-family: Arimo, sans-serif;
+  font-size: 14px;
+  color: rgb(140, 115, 99);
+}
+.required {
+  color: red;
+  font-weight: 700;
+  border: 0 !important;
+  text-decoration: none;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+.help-block {
+  color: rgb(140, 115, 99);
+}
+.login-page {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.title {
+  color: #f8b742;
+  margin-top: 0;
+  font-size: 2em;
+  text-transform: none;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+.bee-register{
+  border-color: #f8b742;
+  float: right;
+  color: #f8b742;
+  background-color: rgba(248,183,66,0);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.05em 1.74em;
+  font-size: 1em;
+  line-height: 1.2857em;
+  font-weight: 700;
+  margin: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 2em;
+  margin-bottom: 1px;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  left: auto;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  margin-top:10px;
+}
+.bee-register:hover{
+  color: #fff;
+  background-color: #f8b742;
+}
+
+
+.bee-login{
+  border-color: #f8b742;
+  float: left;
+  color: #fff;
+  background-color: #f8b742;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.05em 1.74em;
+  font-size: 1em;
+  line-height: 1.2857em;
+  font-weight: 700;
+  margin: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 2em;
+  margin-bottom: 1px;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  left: auto;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  margin-top:10px;
+}
+.register-label{
+  line-height: 2em;
+  display: block;
+  font-family: Arimo, sans-serif;
+  font-size: 17px;
+  color: rgb(140, 115, 99);
+}
